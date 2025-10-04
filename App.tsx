@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+
+// 1. Importe a sua tela de perfil que está dentro da pasta 'src'
+import ProfileScreen from './src/components/screens/ProfileScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  // 2. Em vez de retornar a tela padrão do Expo, 
+  //    retorne o componente da sua tela.
+  return <ProfileScreen />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// Não precisamos mais do StyleSheet que vem por padrão, então ele foi removido.
