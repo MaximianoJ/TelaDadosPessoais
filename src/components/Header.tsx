@@ -16,8 +16,6 @@ type HeaderProps = {
 };
 
 const Header = ({ title, onNotificationPress, onBackPress }: HeaderProps) => {
-  // console.log(`--- Header da tela '${title}' recebeu as props:`, { onBackPress });
-
   return (
     <View style={styles.container}>
       <View style={styles.leftContainer}>
